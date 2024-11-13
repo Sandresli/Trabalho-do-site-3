@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formigas - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <h1>Bem-vindo ao Mundo das Formigas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="btnAdicionarFormiga">Adicionar uma formiga</button>
+    <p id="contadorFormigas">Formigas contadas: 0</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let contador = 0;
+            const contadorElement = document.getElementById('contadorFormigas');
+            const btnAdicionar = document.getElementById('btnAdicionarFormiga');
+
+            btnAdicionar.addEventListener('click', function() {
+                contador++;
+                contadorElement.textContent = "Formigas contadas: " + contador;
+                
+            });
+        });
+    </script>
+
+    <main>
+        <section>
+            <h2>O que são formigas?</h2>
+            <p>As formigas são insetos sociais que vivem em colônias e são conhecidas por sua organização e trabalho em equipe.</p>
+            <p>As formigas são animais invertebrados, com o maior número de espécies do grupo dos insetos.
+               Pertencem ao Filo Arthropoda, Ordem Hymenoptera e todas as espécies fazem parte da Família Formicidae.</p>
+            <img src="imagens/formiga1.jpg" alt="Formiga" />
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sandresli. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
